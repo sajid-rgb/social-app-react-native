@@ -26,11 +26,14 @@ export default function Login({ navigation }) {
             <TouchableOpacity style={{ borderRadius: 5, borderWidth: 2, backgroundColor: 'red', height: 50, width: '40%', marginTop: 10, marginLeft: 100, padding: 15 }} onPress={handleSubmit}>
                 <Text style={{ color: 'white', marginLeft: 20 }}>Sign in</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={()=>navigation.navigate('Login')}>
+            <TouchableOpacity onPress={() => navigation.navigate('Login')}>
                 <Text>Go Login</Text>
             </TouchableOpacity>
 
             <Text>Sign up</Text>
+            <TouchableOpacity onPress={() => navigation.navigate('posts')}>
+                <Text>Post</Text>
+            </TouchableOpacity>
 
         </View>
     );
